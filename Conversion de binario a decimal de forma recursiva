@@ -1,7 +1,7 @@
 
 '''
-Realizar un programa que me permita convetir de manera recursiva un 
-numero de decimal a binario.
+Realizar un programa que me permita convertir de manera recursiva un 
+número de decimal a binario.
 '''
 def decBin(d,l):
 
