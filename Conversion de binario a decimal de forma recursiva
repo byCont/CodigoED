@@ -1,0 +1,23 @@
+
+'''
+Realizar un programa que me permita convetir de manera recursiva un 
+numero de decimal a binario.
+'''
+def decBin(d,l):
+
+    if d==1:
+        l.insert(0, str(d))
+        return l
+    else:
+        l.insert(0, str(d%2))
+        #print(l) proceso de conversión
+        return decBin(d//2, l)
+
+#~~~Principal~~~#
+l= [] #Lista para ir acumulando los residuos (binarios alreves)
+dec= int(input("Ingrese el decimal a convertir: "))
+sal= decBin(dec, l)
+print(''.join(sal))
+
+
+#Author: ByCont
